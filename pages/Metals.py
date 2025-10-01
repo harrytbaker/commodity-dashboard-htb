@@ -211,7 +211,7 @@ st.subheader("Overview")
 # --- Normalise toggle ---
 normalise = st.checkbox(
     "Normalise prices (index = 100 at start)",
-    value=False,
+    value=True,
     help="Scales each series so that its first available value in the selected window equals 100."
 )
 
@@ -291,7 +291,7 @@ with tab2:
     # --- Normalise toggle inside this tab ---
     norm_roll = st.checkbox(
         "Normalise rolling values (index = 100 at start of windowed mean)",
-        value=False,
+        value=True,
         help="Scales each rolling mean/std so the first valid rolling mean in the window equals 100."
     )
 
@@ -397,4 +397,5 @@ st.caption(
     Data powered by [Yahoo Finance](https://finance.yahoo.com/) and the [yfinance](https://ranaroussi.github.io/yfinance/) python module.  
     You can find me at https://www.linkedin.com/in/harrytbaker/"""
 )
+
 

@@ -38,9 +38,6 @@ SOFTS = {
     "Feeder Cattle": "GF=F",
     "Lean Hogs": "HE=F",
     "Class III Milk": "DC=F",
-
-    # 5) Lumber & Other
-    "Lumber": "LBS=F",
 }
 
 # -------------------------
@@ -61,7 +58,7 @@ with col_custom:
     custom_str = st.text_input(
         "Custom tickers (comma-separated):",
         value="",
-        help="Optional. Add extra Yahoo tickers (e.g., ZW=F, FCPO1! if supported)."
+        help="Optional. Add extra Yahoo tickers."
     )
 custom_tickers = [t.strip().upper() for t in custom_str.split(",") if t.strip()]
 
@@ -399,3 +396,4 @@ st.caption(
     Data powered by [Yahoo Finance](https://finance.yahoo.com/) and the [yfinance](https://ranaroussi.github.io/yfinance/) python module.  
     You can find me at https://www.linkedin.com/in/harrytbaker/"""
 )
+

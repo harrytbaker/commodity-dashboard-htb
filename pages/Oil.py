@@ -250,4 +250,12 @@ with tab4:
                   labels={"x": "Date", "y": "Correlation"})
     st.plotly_chart(fig, use_container_width=True)
 
+# ---------------------
+# Footer
+# ---------------------
+st.caption(
+    """This dashboard is for educational/analytical use only.  
+    Data powered by [Yahoo Finance](https://finance.yahoo.com/) and the [yfinance](https://ranaroussi.github.io/yfinance/) python module.  
+    You can find me at https://www.linkedin.com/in/harrytbaker/"""
+)
 
